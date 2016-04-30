@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 
 class TestHTTPServerRequestHandler(BaseHTTPRequestHandler):
-    def do_get(self):
+    def do_GET(self):
         self.send_response(200)
 
         self.send_header('content-type', 'text/html')
